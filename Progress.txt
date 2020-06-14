@@ -1,0 +1,21 @@
+27/03/20
+ - Colour sensor TCS34725 is not I2C addressable
+ - Can't use two sensors concurrently
+ - workarounds are:
+	Different (addressable) I2C sensor (cost and time)
+	Turn off each sensor to read the other (so many latecy and
+	clock issues)
+	Two Port Recieve (Basically the ability to turn each port
+	off in software. Both can still report their colour but
+	only one can be read at a time)
+
+28/03/20
+ - Moved on to developing PWM emitter for motors
+ - H bridge uses jumpers which I obviously forgot at home
+ - Using wire spares to connect Uno->H bridge->Wheels
+ - Powering wheels by psu
+ - Monitoring using serial USB
+ - Both motors working between ~35 and 255 pwm vals
+ - test fwd/bkwd H bridging tomorrow
+ 
+ 
