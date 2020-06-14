@@ -4,7 +4,7 @@
  * 2019
  */
  
-#include <Adafruit_TCS34725.h>
+#include "Adafruit_TCS34725.h"
 
 #define in1 0   // motor A fwd/rev
 #define in2 1   // motor A fwd/rev
