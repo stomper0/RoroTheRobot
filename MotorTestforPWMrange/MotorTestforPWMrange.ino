@@ -1,10 +1,16 @@
+/*
+ * MotorTestforPWMrange.ino
+ * script for assessing the 'buzz' range on two motors
+ * used to eliminate buzzing by excluding the range from a working sketch
+ * Franklyn Watson
+ */
 
-#define enA 3   // motor A PWM signal
-#define in1 0   // motor A fwd/rev
-#define in2 1   // motor A fwd/rev
-#define in3 2  // motor B fwd/rev
-#define in4 4   // motor B fwd/rev
-#define enB 5   // motor B PWM signal
+#define enA 2   // motor A PWM signal
+#define in1 22  // motor A fwd/rev
+#define in2 24  // motor A fwd/rev
+#define in3 26  // motor B fwd/rev
+#define in4 28  // motor B fwd/rev
+#define enB 3   // motor B PWM signal
 
 int motorSpeedA;
 int motorSpeedB;
@@ -89,7 +95,7 @@ void loop() {
 // --- commented until motors tested by range, to find the lowest possible PWM range
 //  // Prevent buzzing at low speeds (Adjust according to your motors. My motors couldn't start moving if PWM value was below value of 70)
 //  if (motorSpeedA < 70) {
-//    motorSpeedA = 0;
+//    motorSpeedA = 0;                      // atm looking like 35 and up, both directions
 //  }
 //  if (motorSpeedB < 70) {
 //    motorSpeedB = 0;

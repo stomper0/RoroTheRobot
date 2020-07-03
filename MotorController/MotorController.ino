@@ -99,7 +99,7 @@ void loop() {
     } else if (digitalRead(btn3) == HIGH) {
       destinationPos = 3;
     }
-    digitalWrite(pLed, HIGH)
+    digitalWrite(pLed, HIGH);
   }
 //
 //  while (currentPos != destinationPos) {

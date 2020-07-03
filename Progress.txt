@@ -19,3 +19,4 @@
  - test fwd/bkwd H bridging tomorrow
  
  
+MotorTestforPWMrange/MotorTestforPWMrange.ino compiles with wrong filename and uploader cant find it
