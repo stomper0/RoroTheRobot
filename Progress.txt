@@ -20,3 +20,6 @@
  
  
 MotorTestforPWMrange/MotorTestforPWMrange.ino compiles with wrong filename and uploader cant find it
+
+28/09/25
+ - Made repo public and cleaned out junk files
